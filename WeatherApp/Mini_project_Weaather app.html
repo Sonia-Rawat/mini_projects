@@ -40,7 +40,7 @@ ad>
         
 
     <script>
-        const apikey = process.env.apikey;
+        const apikey = "089cd273ae6e5f459b1c6c1efdbffc75";
         const apiUrl ="https://api.openweathermap.org/data/2.5/weather?&units=metric&q=";
 
         const searchBox= document.querySelector(".search input");
@@ -62,7 +62,7 @@ ad>
              document.querySelector(".wind").innerHTML = data.wind.speed+ " km/h";
 
              if(data.weather[0].main == "Clouds"){
-                weatherIcon.src = "images/images/clouds.png";
+                weatherIcon.src = "images/images/clouds.png";s
              }else if(data.weather[0].main == "Clear"){
                 weatherIcon.src = "images/images/clear.png";
              }else if(data.weather[0].main == "Rain"){
